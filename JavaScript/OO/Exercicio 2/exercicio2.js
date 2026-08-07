@@ -63,6 +63,6 @@ console.log("Matrícula: ", aluno3.matricula);
 console.log("============================");
 
 // Chamando métodos dos objetos
-aluno1.apresentar();
+aluno1.estudar();
 aluno2.apresentar();
-aluno3.apresentar();
+aluno3.aprendendo();
