@@ -16,11 +16,11 @@ class Aluno {
 
     // Métodos - Ações que o objeto pode realizar
     aprender() {
-        console.log("O aluno está aprendendo.");
+        console.log(`O aluno ${this.nome} está aprendendo.`);
     }
 
     estudar() {
-        console.log("O aluno está estudando.");
+        console.log(`O aluno ${this.nome} está estudando.`);
     }
 
     apresentar() {
@@ -65,4 +65,4 @@ console.log("============================");
 // Chamando métodos dos objetos
 aluno1.estudar();
 aluno2.apresentar();
-aluno3.aprendendo();
+aluno3.aprender();
