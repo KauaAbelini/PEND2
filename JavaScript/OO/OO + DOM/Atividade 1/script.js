@@ -20,19 +20,28 @@ class Turma {
         this.produtos.push(produto);
     }
 
+    excluirProduto(index) {
+        this.produtos.splice(index, 1);
+        this.exibirNaTela();
+    }
+
     exibirNaTela() {
 
         const resultado = document.querySelector('#resultado');
 
         resultado.innerHTML = "";
 
-        this.produtos.forEach(produto => {
+        this.produtos.forEach((produto, index) => {
 
             resultado.innerHTML += `
-                <div>
+                <div class="produto">
                     <p>Nome: ${produto.nome}</p>
                     <p>Preço: R$ ${produto.calcularPreco().toFixed(2)}</p>
                     <p>Desconto: ${produto.desconto}%</p>
+
+                    <button onclick="turma.excluirProduto(${index})">
+                        Excluir
+                    </button>
                 </div>
             `;
         });
@@ -47,7 +56,6 @@ const botaocadastrar = document.querySelector('#botaocadastrar');
 
 const turma = new Turma();
 
-
 botaocadastrar.addEventListener('click', function() {
 
     const produto = new Produto(
@@ -58,4 +66,9 @@ botaocadastrar.addEventListener('click', function() {
 
     turma.adicionarProduto(produto);
     turma.exibirNaTela();
+
+
+    nome.value = "";
+    preco.value = "";
+    desconto.value = "";
 });
