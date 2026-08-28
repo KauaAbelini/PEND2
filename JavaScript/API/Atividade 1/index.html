@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo de Pênalti</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> Bate o Pênalti!</h1>
+
+    <p class="instrucao">
+        Arraste a bola para um dos lados do gol!
+    </p>
+
+    <div class="placar">
+        Gols: <span id="gols">0</span>
+        Chutes: <span id="chutes">0</span>
+    </div>
+
+    <div class="campo">
+
+        <!-- GOL -->
+        <div class="gol">
+
+            <div class="area-esquerda"></div>
+            <div class="area-centro"></div>
+            <div class="area-direita"></div>
+
+            <!-- Goleiro -->
+            <img 
+                src="fotos/carlosmiguel.png" 
+                id="goleiro" 
+                alt="Goleiro"
+            >
+
+        </div>
+
+        <!-- Jogador -->
+        <img 
+            src="fotos/flaco.png" 
+            id="jogador" 
+            alt="Jogador"
+        >
+
+        <!-- Bola -->
+        <img 
+            src="fotos/bola.png" 
+            id="bola"
+            draggable="true"
+            alt="Bola"
+        >
+
+    </div>
+
+    <div id="mensagem">
+        Arraste a bola para o gol!
+    </div>
+
+    <button id="reiniciar">
+        🔄 Bater outro pênalti
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

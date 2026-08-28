@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1b8a3a;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+.instrucao {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.placar {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.campo {
+    position: relative;
+    width: 900px;
+    height: 550px;
+    margin: 20px auto 0;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #238f40 0px,
+            #238f40 100px,
+            #1f853b 100px,
+            #1f853b 200px
+        );
+
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.gol {
+    position: absolute;
+
+    width: 600px;
+    height: 260px;
+
+    top: 40px;
+    left: 150px;
+
+    border: 8px solid white;
+    border-bottom: 15px solid white;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.15),
+            rgba(255,255,255,0.15)
+        );
+
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+}
+
+.area-esquerda,
+.area-centro,
+.area-direita {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 33.33%;
+    border-right: 2px dashed rgba(255,255,255,0.4);
+}
+
+.area-esquerda {
+    left: 0;
+}
+
+.area-centro {
+    left: 33.33%;
+}
+
+.area-direita {
+    left: 66.66%;
+    border-right: none;
+}
+
+#goleiro {
+    position: absolute;
+
+    width: 130px;
+    height: 180px;
+
+    object-fit: contain;
+
+    left: 235px;
+    top: 70px;
+
+    z-index: 5;
+
+    transition:
+        left 0.5s ease,
+        top 0.5s ease,
+        transform 0.5s ease;
+}
+
+#jogador {
+    position: absolute;
+
+    width: 150px;
+    height: 220px;
+
+    object-fit: contain;
+
+    bottom: -15px;
+    left: 550px;
+
+    z-index: 2;
+}
+
+#bola {
+    position: absolute;
+
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    left: 610px;
+    top: 480px;
+
+    cursor: grab;
+
+    z-index: 10;
+
+    transition: all 0.4s ease;
+}
+
+#bola:active {
+    cursor: grabbing;
+}
+
+/* MENSAGEM */
+
+#mensagem {
+    margin-top: 15px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    min-height: 35px;
+}
+
+/* BOTÃO */
+
+#reiniciar {
+    margin-top: 10px;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background: white;
+    color: #167532;
+
+    display: none;
+}
+
+#reiniciar:hover {
+    background: #eeeeee;
+}
+
