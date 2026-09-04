@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Ponto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="container"> 
+            <h1>Registro de Ponto</h1> 
+            
+            <video id="camera" autoplay></video> 
+        
+            <div class="dados">
+                 <p> 
+                    <strong>Latitude:
+                    </strong> <span id="latitude">Obtendo...</span></p> 
+
+
+                <p> 
+                    <strong>Longitude:
+                        </strong> <span id="longitude">Obtendo...</span> </p>
+                 <p> <strong>Precisão:</strong> 
+                    
+                    <span id="precisao">Obtendo...</span> </p>
+
+
+                 </div> <button onclick="registrarPonto()"> Registrar Ponto </button>
+                  <div id="mensagem"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

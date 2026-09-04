@@ -147,8 +147,6 @@ h1 {
     cursor: grabbing;
 }
 
-/* MENSAGEM */
-
 #mensagem {
     margin-top: 15px;
 
@@ -157,8 +155,6 @@ h1 {
 
     min-height: 35px;
 }
-
-/* BOTÃO */
 
 #reiniciar {
     margin-top: 10px;
