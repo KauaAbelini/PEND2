@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sticker Fight</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HUD -->
+    <div class="fight-ui">
+
+        <div class="life life-left">
+            <div id="vidaPreta"></div>
+        </div>
+
+        <div class="vs">
+            VS
+        </div>
+
+        <div class="life life-right">
+            <div id="vidaVermelha"></div>
+        </div>
+
+    </div>
+
+    <div class="player-name player1">
+        PLAYER 1
+    </div>
+
+    <div class="player-name player2">
+        PLAYER 2
+    </div>
+
+    <!-- AVISO DO GOLPE -->
+    <div id="fightText">
+        FIGHT!
+    </div>
+
+    <!-- CANVAS -->
+    <canvas id="canvas" width="1000" height="800"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
